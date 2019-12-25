@@ -1,0 +1,57 @@
+[
+    {
+        "label": "Home",
+        "url": "/home"
+    },
+    {
+        "label": "About Us",
+        "items": [
+            {
+                "label": "Our Pastors",
+                "url": "/pastors"
+            },
+            {
+                "label": "Statement of Faith",
+                "url": "/statement-of-faith"
+            }
+        ]
+    },
+    {
+        "label": "Adult Ministry",
+        "items": [
+            {
+                "label": "Men's Bible Study",
+                "url": "/mens-bible-study"
+            },
+            {
+                "label": "Wednesday Night Bible Study",
+                "url": "/wednesday-night-bible-study"
+            },
+            {
+                "label": "Women's Bible Study",
+                "url": "/womens-bible-study"
+            }
+        ]
+    },
+    {
+        "label": "Children's Ministry",
+        "items": [
+            {
+                "label": "Awana",
+                "url": "/awana"
+            },
+            {
+                "label": "King's Kids",
+                "url": "/kings-kids"
+            },
+            {
+                "label": "Toddler Time",
+                "url": "/toddler-time"
+            },
+            {
+                "label": "Youth Impact",
+                "url": "/youth-impact"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+:root {
+  --primary-color: rgb(22,69,89);
+  --secondary-color: rgb(222,120,38);
+  --background-color: rgb(255,255,255);
+  --darkened-background-color: rgb(217,217,217);
+}
+
+html, body {
+  min-width:100%;
+  margin:0px;
+  padding:0px;
+  background-color: var(--darkened-background-color);
+}
