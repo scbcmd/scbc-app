@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(22,69,89);
+  --primary-color-highlight: rgb(34,108,140);
   --secondary-color: rgb(222,120,38);
   --background-color: rgb(255,255,255);
   --darkened-background-color: rgb(217,217,217);
@@ -10,4 +11,24 @@ html, body {
   margin:0px;
   padding:0px;
   background-color: var(--darkened-background-color);
+  font-family: 'Roboto', 'Arial', 'Sans Serif';
+  overflow-x: hidden;
+}
+
+#app {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+body .p-button {
+  font-family: 'Roboto', 'Arial', 'Sans Serif';
+  background-color: var(--primary-color);
+  border-radius: 0px;
+  border:none;
+}
+
+body .p-button:enabled:hover {
+  background:none;
+  background-color: var(--primary-color-highlight);
 }
