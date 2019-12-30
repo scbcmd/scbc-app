@@ -1,0 +1,31 @@
+#footer {
+    position: relative;
+    width:100%;
+    bottom: 0px;
+    background-color: var(--background-color);
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer li {
+    border-left: solid 1px black;
+    padding-left:3px;
+    display:inline-block;
+    margin:3px;
+}
+
+#footer li:first-child {
+    padding-left: 0px;
+    border-left: none;
+}
+
+#footer a {
+    cursor: pointer;
+    color:black;
+}
+
+#footer .copyright {
+    color: gray; 
+}

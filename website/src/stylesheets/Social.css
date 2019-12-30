@@ -1,0 +1,24 @@
+.social {
+    font-size:25px;
+}
+
+.social-icon {
+    color: gray;
+    margin:2px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.facebook-icon:hover {
+    color: rgb(24,119,241);
+}
+
+.instagram-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.youtube-icon:hover {
+    color: rgb(205,32,31);
+}

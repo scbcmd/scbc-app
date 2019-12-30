@@ -1,0 +1,73 @@
+[
+    {
+        "type": "slideshow",
+        "slides": [
+            {
+                "type": "image",
+                "url": "images/hands-in-worship.jpg",
+                "content": "<h1>Come Worship with Us!</h1><h2>Connect Groups at 9:30 AM</h2><h2>Worship Service at 10:45 AM</h2><h2>Sunday Evenings at 6:00 PM</h2>",
+                "color": "rgba(22,69,89,0.3)"
+            },
+            {
+                "type": "image",
+                "url": "images/awana.jpg",
+                "content": "<h1>Awana Clubs</h1><h2>Wednesdays at 6:00 PM</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/awana"
+                }
+            },
+            {
+                "type": "image",
+                "url": "images/outside-group.jpg",
+                "content": "<h1>Youth Impact</h1><h2>Sunday Nights at 5:30 PM</h2><h2>All grades 6-12 welcome!</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/youth-impact"
+                }
+            },
+            {
+                "type": "image",
+                "url": "images/sheet-music.jpg",
+                "content": "<h1>King's Kids Children's Choir</h1><h2>Sundays at 6:00 PM during the school year</h2><h2>Ages K - 5th Grade</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/kings-kids"
+                }
+            },
+            {
+                "type": "image",
+                "url": "images/toddler.jpg",
+                "content": "<h1>Toddler Time</h1><h2>A play group for moms and toddlers</h2><h2>Mondays from 9:30-11:00 AM</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/toddler-time"
+                }
+            },
+            {
+                "type": "image",
+                "url": "images/bible-highlight.jpg",
+                "content": "<h1>Join Us for Bible Study!</h1><h2>Sunday at 6:00 PM (Coed Study)</h2><h2>Tuesdays at 1:00 and 7:00 PM (Ladies Study)</h2><h2>Wednesdays at 6:30 PM (Men's Study)</h2><h2>Wednesday at 6:30 PM (Coed Study)</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/bible-study"
+                }
+            },
+            {
+                "type": "image",
+                "url": "images/anvil.jpg",
+                "content": "<h1>F.O.R.G.E</h1><h2>A Christ-Centered 12-step recovery group</h2><h2>Fridays from 6:30 to 8:00 PM</h2>",
+                "color": "rgba(22,69,89,0.3)",
+                "button": {
+                    "label": "Learn More",
+                    "url": "/forge"
+                }
+            }
+        ]
+    }
+]

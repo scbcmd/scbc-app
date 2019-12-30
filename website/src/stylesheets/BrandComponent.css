@@ -1,0 +1,6 @@
+body .p-nogutter .brand-component {
+    background-color: var(--background-color);
+    color:var(--primary-color);
+    padding: 50px;
+    text-align:center;
+}
