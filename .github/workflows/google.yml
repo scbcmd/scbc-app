@@ -23,4 +23,4 @@ jobs:
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
           CLI: gsutil
       with:
-          args: rsync -R ./ gs://www.brandonfallin.com
+          args: rsync -R website gs://www.brandonfallin.com
