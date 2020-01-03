@@ -12,7 +12,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [12.x]
     
     steps:
 
@@ -43,4 +43,4 @@ jobs:
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
           CLI: gsutil
       with:
-          args: rsync -R website/build gs://www.brandonfallin.com
+          args: -m rsync -r -d website/build gs://www.brandonfallin.com
