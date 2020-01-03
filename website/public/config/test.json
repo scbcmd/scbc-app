@@ -6,7 +6,7 @@
                 "type": "image",
                 "url": "images/hands-in-worship.jpg",
                 "content": "<h1>It Worked!</h1><h2>Connect Groups at 9:30 AM</h2><h2>Worship Service at 10:45 AM</h2><h2>Sunday Evenings at 6:00 PM</h2>",
-                "color": "rgba(22,69,89,0.3)"
+                "color": "rgba(22,69,89,1)"
             },
             {
                 "type": "image",
