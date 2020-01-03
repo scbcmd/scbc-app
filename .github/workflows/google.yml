@@ -9,11 +9,31 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+    
     steps:
 
     # Checkout Master Branch
     - name: Checkout
       uses: actions/checkout@master
+    
+    # Setup Node
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    # Build
+    - name: npm install, build, and test
+      run: |
+        cd website
+        npm install
+        npm run build
+      env:
+        CI: false
     
     # Copy to Google Cloud
     - name: Copy
@@ -23,4 +43,4 @@ jobs:
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CLOUD_CREDENTIALS }}
           CLI: gsutil
       with:
-          args: rsync -R website gs://www.brandonfallin.com
+          args: rsync -R website/build gs://www.brandonfallin.com
