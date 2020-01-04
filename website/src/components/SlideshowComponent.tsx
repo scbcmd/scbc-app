@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import { SlideshowModel } from '../model/SlideshowModel';
 import {Paginator} from 'primereact/paginator';
 import { BaseComponent } from './BaseComponent';
+import UUID from "uuid";
 import '../stylesheets/SlideshowComponent.css';
 
 interface SlideshowComponentProps {
@@ -29,11 +30,7 @@ export class SlideshowComponent extends React.Component<SlideshowComponentProps,
             previousIndex: 0,
             manuallySelected: false
         }
-
-        if(window.slideshowCounter == null) window.slideshowCounter = 1;
-        else window.slideshowCounter += 1;
-
-        this.id = `slideshow${window.slideshowCounter}`;
+        this.id = UUID();
         this.onSlideChange = this.onSlideChange.bind(this);
         this.changeSlide = this.changeSlide.bind(this);
     }

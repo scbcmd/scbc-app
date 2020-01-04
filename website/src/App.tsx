@@ -14,7 +14,6 @@ import { ErrorComponent } from './components/ErrorComponent';
 declare global {
     interface Window {
 		google: any;
-		slideshowCounter: number;
 	}
 }
 
