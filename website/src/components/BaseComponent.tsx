@@ -24,31 +24,37 @@ interface BaseComponentState {
 
 export class BaseComponent extends React.Component<BaseComponentProps, BaseComponentState> {
 
+    public constructor(props: BaseComponentProps){
+        super(props);
+        this.getModelType = this.getModelType.bind(this);
+    }
+
+    private getModelType(): ModelType {
+        if(!isNaN(this.props.model.type)) return this.props.model.type as ModelType;
+        const enumName: string = this.props.model.type.toString().toUpperCase();
+        const key = enumName as keyof typeof ModelType;
+        return ModelType[key];
+    }
+
     public render(): ReactElement {
 
-        console.log(this.props.model);
+        switch(this.getModelType()){
+            case ModelType.BRAND:
+                return <BrandComponent model={this.props.model as BrandModel} className={this.props.className} style={this.props.style} />
 
-        if(this.props.model.type == ModelType.MAP || this.props.model.type.toString().toLowerCase() == ModelType[ModelType.MAP].toString().toLowerCase()){
-            const mapModel: MapModel = this.props.model as MapModel;
-            return <MapComponent model={mapModel} className={this.props.className} style={this.props.style} />
-        }
-        if(this.props.model.type == ModelType.IMAGE || this.props.model.type.toString().toLowerCase() == ModelType[ModelType.IMAGE].toString().toLowerCase()){
-            const imageModel: ImageModel = this.props.model as ImageModel;
-            return <ImageOverlayComponent model={imageModel} className={this.props.className} style={this.props.style} />
-        }
-        if(this.props.model.type == ModelType.DUAL || this.props.model.type.toString().toLowerCase() == ModelType[ModelType.DUAL].toString().toLowerCase()){
-            const dualModel: DualModel = this.props.model as DualModel;
-            return <DualComponent model={dualModel} className={this.props.className} style={this.props.style} />
-        }
-        if(this.props.model.type == ModelType.BRAND || this.props.model.type.toString().toLowerCase() == ModelType[ModelType.BRAND].toString().toLowerCase()){
-            const brandModel: BrandModel = this.props.model as BrandModel;
-            return <BrandComponent model={brandModel} className={this.props.className} style={this.props.style} />
-        }
-        if(this.props.model.type == ModelType.SLIDESHOW || this.props.model.type.toString().toLowerCase() == ModelType[ModelType.SLIDESHOW].toString().toLowerCase()){
-            const slideshowModel: SlideshowModel = this.props.model as SlideshowModel;
-            return <SlideshowComponent model={slideshowModel} className={this.props.className} style={this.props.style} />
-        }
+            case ModelType.DUAL:
+                return <DualComponent model={this.props.model as DualModel} className={this.props.className} style={this.props.style} />
 
-        return <React.Fragment></React.Fragment>
+            case ModelType.IMAGE:
+                return <ImageOverlayComponent model={this.props.model as ImageModel} className={this.props.className} style={this.props.style} />
+
+            case ModelType.MAP:
+                return <MapComponent model={this.props.model as MapModel} className={this.props.className} style={this.props.style} />
+
+            case ModelType.SLIDESHOW:
+                return <SlideshowComponent model={this.props.model as SlideshowModel} className={this.props.className} style={this.props.style} />
+
+            default: return <React.Fragment/>
+        }
     }
 }

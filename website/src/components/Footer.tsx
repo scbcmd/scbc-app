@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import { ImageOverlay } from './ImageOverlay';
 import { Social } from './Social';
 import '../stylesheets/Footer.css';
 

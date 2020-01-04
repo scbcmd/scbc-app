@@ -9,14 +9,15 @@ import { Footer } from './components/Footer';
 import { BaseModel } from './model/BaseModel';
 import Axios from 'axios';
 import { BaseComponent } from './components/BaseComponent';
-import { ChurchMap } from './components/ChurchMap';
 import { ErrorComponent } from './components/ErrorComponent';
 
 declare global {
     interface Window {
 		google: any;
-		slideshowCounter: number;
 	}
+}
+
+interface AppProps {
 }
 
 interface AppState {
@@ -24,9 +25,9 @@ interface AppState {
 	error?: any;
 }
 
-export class App extends React.Component<{}, AppState> {
+export class App extends React.Component<AppProps, AppState> {
 
-	constructor(props: {}) {
+	constructor(props: AppProps) {
 		super(props);
 		this.state = {
 			models: [],
