@@ -4,6 +4,7 @@ import {PanelMenu} from 'primereact/panelmenu';
 import Axios from 'axios';
 import '../stylesheets/NavigationMenu.css';
 import { Social } from './Social';
+import ConfigService from '../services/ConfigService';
 
 
 interface NavigationMenuProps {}
@@ -24,17 +25,20 @@ export class NavigationMenu extends React.Component<NavigationMenuProps, Navigat
     }
 
     public componentDidMount(){
-        Axios.get('/config/navigation.json')
-        .then((response) => {
-            let content = response.data;
+        new ConfigService().getNavigation()
+        .then(result => {
+            let content = result;
             for(let i = 0; i < content.length; i++) {
                 if(content[i].url) {
                     content[i].command = () => {window.location.assign(content[i].url)}
                 }
             }
             this.setState({
-                navigationContent: content
-            });
+                navigationContent: content as []
+            })
+        })
+        .catch(error => {
+            console.log(error);
         });
     }
 
