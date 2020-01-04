@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Church Calendar",
+        "url": "/calendar"
+    },
+    {
+        "label": "Southern Baptist Convention",
+        "url": "http://www.sbc.net/"
+    },
+    {
+        "label": "Baptist Faith And Message",
+        "url": "http://www.sbc.net/bfm2000/default.asp"
+    },
+    {
+        "label": "International Mission Board",
+        "url": "http://www.sbc.net/aboutus/entities/imb.asp"
+    },
+    {
+        "label": "North American Mission Board",
+        "url": "http://www.sbc.net/aboutus/entities/namb.asp"
+    }
+]
