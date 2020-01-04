@@ -81,11 +81,6 @@ export class SlideshowComponent extends React.Component<SlideshowComponentProps,
         return this.state.index + 1;
     }
 
-    private getPreviousIndex(): number {
-        if(this.state.index == 0) return this.props.model.slides.length - 1;
-        return this.state.index - 1;
-    }
-
     public render(): ReactElement {
 
         const elements: ReactElement[] = [];
