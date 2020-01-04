@@ -10,6 +10,7 @@ import { BaseModel } from './model/BaseModel';
 import Axios from 'axios';
 import { BaseComponent } from './components/BaseComponent';
 import { ErrorComponent } from './components/ErrorComponent';
+import ConfigService from './services/ConfigService';
 
 declare global {
     interface Window {
@@ -35,18 +36,12 @@ export class App extends React.Component<AppProps, AppState> {
 	}
 
 	public componentDidMount(){
-		let path: string = window.location.pathname.substr(1);
-		if(path == "") {
-			path = "home";
-		}
-		
-		Axios.get(`config/${path}.json`)
+		new ConfigService().getPage()
 		.then((result) => {
 			this.setState({
-				models: result.data
+				models: result
 			});
-		})
-		.catch((err) => {
+		}).catch((err) => {
 			console.log(err.response);
 			this.setState({
 				error: err
@@ -57,11 +52,11 @@ export class App extends React.Component<AppProps, AppState> {
 	public render(): ReactElement {
 		
 		const elements: ReactElement[] = [];
-		let i = 0;
-		this.state.models.forEach((model) => {
-			elements.push(<BaseComponent key={i} model={model} />);
-			i++;
-		});
+		if(this.state.models != null) {
+			for(let i = 0; i < this.state.models.length; i++){
+				elements.push(<BaseComponent key={i} model={this.state.models[i]} />);
+			}
+		}
 
 		const errorElement: ReactElement = this.state.error == null ? <React.Fragment /> : <ErrorComponent error={this.state.error}/>;
 		
