@@ -1,14 +1,27 @@
-import Axios, { AxiosResponse } from "axios";
+import Axios from "axios";
 import { FooterModel } from "../model/FooterModel";
 import { BaseModel } from "../model/BaseModel";
+import AlertModel from "../model/AlertModel";
 
 export default class ConfigService {
+
+    private static instance: ConfigService;
+
+    private constructor() {
+
+    }
+
+    public static getInstance(): ConfigService {
+        if(this.instance == null) {
+            this.instance = new ConfigService();
+        }
+        return this.instance;
+    }
 
     public getFooter(): Promise<FooterModel[]> {   
         return new Promise<FooterModel[]>((resolve, reject) => {
             Axios.get(`${window.location.origin}/config/footer.json`)
             .then((response) => {
-                console.log(response);
                 resolve(response.data);
             })
             .catch((error) => {
@@ -17,7 +30,6 @@ export default class ConfigService {
         });
     }
 
-    // TODO
     public getNavigation(): Promise<any[]> {
         return new Promise<any[]>((resolve, reject) => {
             Axios.get(`${window.location.origin}/config/navigation.json`)
@@ -30,16 +42,13 @@ export default class ConfigService {
         });
     }
 
-    public getPage(): Promise<BaseModel[]> {
-
-        let path: string = window.location.pathname.substr(1);
-		if(path == "") {
-			path = "home";
-		}
+    public getPage(path: string): Promise<BaseModel[]> {
 
         return new Promise<BaseModel[]>((resolve, reject) => {
-            Axios.get(`${window.location.origin}/config/${path}.json`)
+            const fullpath = `${window.location.origin}/config/${path}.json`;
+            Axios.get(fullpath)
             .then((response) => {
+                console.log(response.data);
                 resolve(response.data);
             })
             .catch((error) => {
@@ -48,4 +57,15 @@ export default class ConfigService {
         });
     }
 
+    public getAlerts(): Promise<AlertModel[]> {
+        return new Promise<AlertModel[]>((resolve, reject) => {
+            Axios.get(`${window.location.origin}/config/alerts.json`)
+            .then((response) => {
+                resolve(response.data);
+            })
+            .catch((error) => {
+                reject(error)
+            })
+        });
+    }
 }
