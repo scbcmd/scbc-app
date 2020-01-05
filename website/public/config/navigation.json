@@ -1,18 +1,18 @@
 [
     {
         "label": "Home",
-        "url": "/home"
+        "link": "/home"
     },
     {
         "label": "About Us",
         "items": [
             {
                 "label": "Our Pastors",
-                "url": "/pastors"
+                "link": "/pastors"
             },
             {
                 "label": "Our Beliefs",
-                "url": "/our-beliefs"
+                "link": "/our-beliefs"
             }
         ]
     },
@@ -21,15 +21,15 @@
         "items": [
             {
                 "label": "Men's Bible Study",
-                "url": "/mens-bible-study"
+                "link": "/mens-bible-study"
             },
             {
                 "label": "Wednesday Night Bible Study",
-                "url": "/wednesday-night-bible-study"
+                "link": "/wednesday-night-bible-study"
             },
             {
                 "label": "Women's Bible Study",
-                "url": "/womens-bible-study"
+                "link": "/womens-bible-study"
             }
         ]
     },
@@ -38,19 +38,19 @@
         "items": [
             {
                 "label": "Awana",
-                "url": "/awana"
+                "link": "/awana"
             },
             {
                 "label": "King's Kids",
-                "url": "/kings-kids"
+                "link": "/kings-kids"
             },
             {
                 "label": "Toddler Time",
-                "url": "/toddler-time"
+                "link": "/toddler-time"
             },
             {
                 "label": "Youth Impact",
-                "url": "/youth-impact"
+                "link": "/youth-impact"
             }
         ]
     }

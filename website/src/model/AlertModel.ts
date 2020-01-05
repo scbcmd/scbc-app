@@ -1,4 +1,4 @@
-export default class Alert {
+export default class AlertModel {
     public readonly title: string;
     public readonly description: string;
     public readonly expirationDate: Date;

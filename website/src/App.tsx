@@ -7,10 +7,11 @@ import './App.css';
 import { NavigationMenu } from './components/NavigationMenu';
 import { Footer } from './components/Footer';
 import { BaseModel } from './model/BaseModel';
-import Axios from 'axios';
 import { BaseComponent } from './components/BaseComponent';
 import { ErrorComponent } from './components/ErrorComponent';
 import ConfigService from './services/ConfigService';
+import { AlertComponent } from './components/AlertComponent';
+import PageService from './services/PageService';
 
 declare global {
     interface Window {
@@ -23,7 +24,6 @@ interface AppProps {
 
 interface AppState {
 	models: BaseModel[]
-	error?: any;
 }
 
 export class App extends React.Component<AppProps, AppState> {
@@ -31,22 +31,24 @@ export class App extends React.Component<AppProps, AppState> {
 	constructor(props: AppProps) {
 		super(props);
 		this.state = {
-			models: [],
-		}	
+			models: []
+		}
+
+		PageService.getInstance().pageChange.add(models => {
+			this.setState({
+				models: models
+			})
+		});
 	}
 
 	public componentDidMount(){
-		new ConfigService().getPage()
-		.then((result) => {
+		PageService.getInstance()
+		.getCurrentPage()
+		.then(models => {
 			this.setState({
-				models: result
+				models: models
 			});
-		}).catch((err) => {
-			console.log(err.response);
-			this.setState({
-				error: err
-			});
-		});
+		});		
 	}
 
 	public render(): ReactElement {
@@ -58,11 +60,9 @@ export class App extends React.Component<AppProps, AppState> {
 			}
 		}
 
-		const errorElement: ReactElement = this.state.error == null ? <React.Fragment /> : <ErrorComponent error={this.state.error}/>;
-		
 		return <div id="app">
 			<NavigationMenu/>
-			{errorElement}
+			<AlertComponent />
 			{elements}
 			<Footer />
 		</div>

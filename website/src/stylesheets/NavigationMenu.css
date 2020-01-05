@@ -73,3 +73,7 @@
 #sidebar-menu .p-panelmenu-header span {
     color:var(--primary-color);
 }
+
+body .p-component-overlay {
+    background-color: rgba(0,0,0,0);
+}
