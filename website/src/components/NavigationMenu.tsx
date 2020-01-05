@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
 import {Sidebar} from 'primereact/sidebar';
 import {PanelMenu} from 'primereact/panelmenu';
-import Axios from 'axios';
 import '../stylesheets/NavigationMenu.css';
 import { Social } from './Social';
 import ConfigService from '../services/ConfigService';
+import PageService from '../services/PageService';
 
 
 interface NavigationMenuProps {}
@@ -25,21 +25,36 @@ export class NavigationMenu extends React.Component<NavigationMenuProps, Navigat
     }
 
     public componentDidMount(){
-        new ConfigService().getNavigation()
+        ConfigService.getInstance().getNavigation()
         .then(result => {
-            let content = result;
-            for(let i = 0; i < content.length; i++) {
-                if(content[i].url) {
-                    content[i].command = () => {window.location.assign(content[i].url)}
-                }
-            }
+            let items = result;
+            this.modifyMenuItems(items);
             this.setState({
-                navigationContent: content as []
+                navigationContent: items as []
             })
         })
         .catch(error => {
             console.log(error);
         });
+    }
+
+    private modifyMenuItems(items: any[]) {
+        for(let i = 0; i < items.length; i++) {
+            const item = items[i];
+
+            if(item.items){
+                this.modifyMenuItems(item.items);
+            }
+
+            if(item.link) {
+                item.command = () => {
+                    this.setState({
+                        isSideBarVisible: false
+                    });
+                    PageService.getInstance().changePage(item.link);
+                }
+            }
+        }
     }
 
 	public render(): ReactElement {
@@ -49,7 +64,7 @@ export class NavigationMenu extends React.Component<NavigationMenuProps, Navigat
                     <img src="images/logo.jpg" alt="Southern Calvert Baptist Church"></img>
                     <Social />
             </div>
-            <Sidebar id="sidebar" visible={this.state.isSideBarVisible} modal={false} onHide={() => this.setState({isSideBarVisible:false})}>
+            <Sidebar id="sidebar" visible={this.state.isSideBarVisible} onHide={() => this.setState({isSideBarVisible:false})}>
                 <PanelMenu model={this.state.navigationContent} id="sidebar-menu" style={{width:'100%'}}/>
             </Sidebar>
             <div style={{height:"60px"}}></div>

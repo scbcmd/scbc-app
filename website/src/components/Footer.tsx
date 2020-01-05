@@ -22,9 +22,8 @@ export class Footer extends React.Component<FooterProps, FooterState> {
     }
 
     public componentDidMount() {
-        new ConfigService().getFooter()
+        ConfigService.getInstance().getFooter()
         .then(result => {
-            console.log(result);
             this.setState({
                 model: result
             });

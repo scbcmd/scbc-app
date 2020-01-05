@@ -3,6 +3,7 @@ import '../stylesheets/ImageOverlay.css';
 import { ImageModel } from '../model/ImageModel';
 import { Button } from 'primereact/button';
 import { IButton } from '../model/IButton';
+import PageService from '../services/PageService';
 
 
 interface ImageOverlayComponentProps {
@@ -34,7 +35,7 @@ export class ImageOverlayComponent extends React.Component<ImageOverlayComponent
 
         if(this.props.model.button != null){
             const button: IButton = this.props.model.button;
-            buttonElement = <Button label={button.label} onClick={() => {window.location.assign(button.url)}} />
+            buttonElement = <Button label={button.label} onClick={() => {PageService.getInstance().changePage(button.url)}} />
         }
 
         return <div style={this.state.style} className={`image-overlay-wrapper ${this.props.className}`}>
