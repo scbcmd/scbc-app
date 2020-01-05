@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Sunday Evening Events Cancelled",
+        "description": "Sunday evening events for 01/05/2019 are cancelled due to inclement weather",
+        "expirationDate": "2020-01-05T20:00:00.000Z"
+    },
+    {
+        "title": "Another Title",
+        "description": "This is another long desciprtion",
+        "expirationDate": "2020-01-04T20:10:00.000Z"
+    }
+]
