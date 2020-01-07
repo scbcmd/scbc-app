@@ -11,6 +11,8 @@ import { BrandComponent } from './BrandComponent';
 import { BrandModel } from '../model/BrandModel';
 import { SlideshowModel } from '../model/SlideshowModel';
 import { SlideshowComponent } from './SlideshowComponent';
+import { FacebookComponent } from './FacebookComponent';
+import { FacebookModel } from '../model/FacebookModel';
 
 interface BaseComponentProps {
     key?: number;
@@ -53,6 +55,9 @@ export class BaseComponent extends React.Component<BaseComponentProps, BaseCompo
 
             case ModelType.SLIDESHOW:
                 return <SlideshowComponent model={this.props.model as SlideshowModel} className={this.props.className} style={this.props.style} />
+
+            case ModelType.FACEBOOK:
+                return <FacebookComponent  model={this.props.model as FacebookModel} className={this.props.className} style={this.props.style}/>
 
             default: return <React.Fragment/>
         }
