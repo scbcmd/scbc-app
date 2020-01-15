@@ -1,6 +1,7 @@
 export enum ModelType {
     BRAND,
     CALENDAR,
+    CARD,
     DUAL,
     IMAGE,
     MAP,
