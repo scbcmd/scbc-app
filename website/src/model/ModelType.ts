@@ -5,5 +5,6 @@ export enum ModelType {
     IMAGE,
     MAP,
     SLIDESHOW,
-    YOUTUBE
+    YOUTUBE,
+    FACEBOOK
 }
