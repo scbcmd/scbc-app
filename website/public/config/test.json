@@ -74,5 +74,10 @@
                 }
             }
         ]
+    },
+
+    {
+        "type": "calendar",
+        "calendarId": "gaylekokolios69@gmail.com"
     }
 ]
