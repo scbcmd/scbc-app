@@ -1,7 +1,13 @@
 [
     {
-        "type": "facebook",
-        "url": "www.facebook.com%2FSouthern-Calvert-Baptist-Church-118133441589278"
+        "type": "map",
+        "location": {
+            "lat": 38.364847,
+            "lng": -76.448189
+        },
+        "content": "<h2>Southern Calvert Baptist Church</h2><p>12140 H. G. Trueman Road Lusby, Md 20657</p>",
+        "url": "https://www.google.com/maps/place/Southern+Calvert+Baptist+Church/@38.3648675,-76.4485491,19.5z/data=!4m5!3m4!1s0x89b9d7f830f9eae9:0x93c835718a27e7e6!8m2!3d38.364885!4d-76.448204",
+        "zoom": 17
     },
 
     {

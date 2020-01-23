@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { BaseModel } from '../model/BaseModel';
 import { ModelType } from '../model/ModelType';
 import { MapModel } from '../model/MapModel';
-import { MapComponent } from './MapComponent';
+import { LeafletMapComponent } from './LeafletMapComponent';
 import { ImageModel } from '../model/ImageModel';
 import { ImageOverlayComponent } from './ImageOverlayComponent';
 import { DualModel } from '../model/DualModel';
@@ -56,7 +56,7 @@ export class BaseComponent extends React.Component<BaseComponentProps, BaseCompo
                 return <ImageOverlayComponent model={this.props.model as ImageModel} className={this.props.className} style={this.props.style} />
 
             case ModelType.MAP:
-                return <MapComponent model={this.props.model as MapModel} className={this.props.className} style={this.props.style} />
+                return <LeafletMapComponent model={this.props.model as MapModel} className={this.props.className} style={this.props.style} />
 
             case ModelType.SLIDESHOW:
                 return <SlideshowComponent model={this.props.model as SlideshowModel} className={this.props.className} style={this.props.style} />
