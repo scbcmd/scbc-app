@@ -1,0 +1,31 @@
+body .fc .fc-toolbar .fc-button {
+    background-color:var(--primary-color);
+    border-color:rgba(0,0,0,0.3);
+    opacity:0.9;
+}
+
+body .fc .fc-toolbar .fc-button:disabled {
+    background-color:lightgrey !important;
+    border-color:rgba(0,0,0,0.3);
+    opacity:1;
+}
+
+body .fc .fc-toolbar .fc-button:enabled:hover {
+    background-color:var(--primary-color) !important;
+    border-color:rgba(0,0,0,0.3);
+    opacity:1;
+}
+
+body .fc .fc-day-grid-event,
+body .fc .fc-time-grid-event {
+    font-family: 'Roboto', 'Arial', 'Sans Serif';
+    background-color:var(--primary-color);
+    border-color:rgba(0,0,0,0.3);
+    opacity:0.9;
+}
+
+body .fc .fc-day-grid-event:hover,
+body .fc .fc-time-grid-event:hover {
+    opacity:1;
+    z-index:1000 !important;
+}

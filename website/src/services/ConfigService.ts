@@ -48,7 +48,6 @@ export default class ConfigService {
             const fullpath = `${window.location.origin}/config/${path}.json`;
             Axios.get(fullpath)
             .then((response) => {
-                console.log(response.data);
                 resolve(response.data);
             })
             .catch((error) => {
