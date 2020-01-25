@@ -57,6 +57,9 @@ export class BaseComponent extends React.Component<BaseComponentProps, BaseCompo
             case ModelType.DUAL:
                 return <DualComponent model={this.props.model as DualModel} className={this.props.className} style={this.props.style} />
 
+            case ModelType.FACEBOOK:
+                return <FacebookComponent  model={this.props.model as FacebookModel} className={this.props.className} style={this.props.style}/>
+
             case ModelType.IMAGE:
                 return <ImageOverlayComponent model={this.props.model as ImageModel} className={this.props.className} style={this.props.style} />
 
@@ -65,9 +68,6 @@ export class BaseComponent extends React.Component<BaseComponentProps, BaseCompo
 
             case ModelType.SLIDESHOW:
                 return <SlideshowComponent model={this.props.model as SlideshowModel} className={this.props.className} style={this.props.style} />
-
-            case ModelType.FACEBOOK:
-                return <FacebookComponent  model={this.props.model as FacebookModel} className={this.props.className} style={this.props.style}/>
 
             default: return <React.Fragment/>
         }

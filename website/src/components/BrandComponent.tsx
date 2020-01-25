@@ -17,7 +17,7 @@ export class BrandComponent extends React.Component<BrandComponentProps, BrandCo
 
     public render(): ReactElement {
         return <div className={`${this.props.className} brand-component`} style={this.props.style}>
-            <img src="images/logo.jpg"/>
+            <img src="images/logo.jpg" alt="church logo"/>
             <div dangerouslySetInnerHTML={{__html: this.props.model.content}}/>
         </div>
     }

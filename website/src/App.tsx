@@ -8,8 +8,6 @@ import { NavigationMenu } from './components/NavigationMenu';
 import { Footer } from './components/Footer';
 import { BaseModel } from './model/BaseModel';
 import { BaseComponent } from './components/BaseComponent';
-import { ErrorComponent } from './components/ErrorComponent';
-import ConfigService from './services/ConfigService';
 import { AlertComponent } from './components/AlertComponent';
 import PageService from './services/PageService';
 

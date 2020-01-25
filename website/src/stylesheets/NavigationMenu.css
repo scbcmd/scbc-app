@@ -22,7 +22,8 @@
 #titlebar > img {
     padding: 5px;
     height: 100%;
-    user-select: none
+    user-select: none;
+    cursor: pointer;
 }
 
 #titlebar > .social {

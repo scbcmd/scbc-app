@@ -51,7 +51,12 @@ export class NavigationMenu extends React.Component<NavigationMenuProps, Navigat
                     this.setState({
                         isSideBarVisible: false
                     });
-                    PageService.getInstance().changePage(item.link);
+                    if(item.link.startsWith("http")){
+                        window.open(item.link);
+                    }
+                    else {
+                        PageService.getInstance().changePage(item.link);
+                    }
                 }
             }
         }
@@ -61,7 +66,7 @@ export class NavigationMenu extends React.Component<NavigationMenuProps, Navigat
 		return <React.Fragment>
             <div id="titlebar">
                     <i className="fas fa-bars" id="hamburger-button" onClick={(e) => this.setState({isSideBarVisible: !this.state.isSideBarVisible})}></i>
-                    <img src="images/logo.jpg" alt="Southern Calvert Baptist Church"></img>
+                    <img src="images/logo.jpg" alt="Southern Calvert Baptist Church" onClick={() => {PageService.getInstance().changePage("home")}}></img>
                     <Social />
             </div>
             <Sidebar id="sidebar" visible={this.state.isSideBarVisible} onHide={() => this.setState({isSideBarVisible:false})}>

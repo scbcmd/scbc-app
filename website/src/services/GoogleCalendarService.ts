@@ -82,7 +82,7 @@ export default class GoogleCalendarService {
         const day: number = parseInt(dateSections[2]);
 
         // whole day
-        if(sections.length == 1){
+        if(sections.length === 1){
             return new Date(year, month, day);
         }
 

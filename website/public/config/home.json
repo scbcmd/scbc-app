@@ -4,7 +4,7 @@
         "slides": [
             {
                 "type": "image",
-                "url": "images/hands-in-worship.jpg",
+                "url": "images/hands-up.jpg",
                 "content": "<h1>Come Worship with Us!</h1><p>Connect Groups at 9:30 AM</p><p>Worship Service at 10:45 AM</p><p>Sunday Evenings at 6:00 PM</p>",
                 "color": "rgba(22,69,89,0.4)"
             },
@@ -12,61 +12,37 @@
                 "type": "image",
                 "url": "images/awana.jpg",
                 "content": "<h1>Awana Clubs</h1><p>Wednesdays at 6:00 PM</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/awana"
-                }
+                "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
                 "url": "images/outside-group.jpg",
                 "content": "<h1>Youth Impact</h1><p>Sunday Nights at 5:30 PM</p><p>All grades 6-12 welcome!</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/youth-impact"
-                }
+                "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
                 "url": "images/sheet-music.jpg",
                 "content": "<h1>King's Kids Children's Choir</h1><p>Sundays at 6:00 PM during the school year</p><p>Ages K - 5th Grade</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/kings-kids"
-                }
+                "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
                 "url": "images/toddler.jpg",
                 "content": "<h1>Toddler Time</h1><p>A play group for moms and toddlers</p><p>Mondays from 9:30-11:00 AM</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/toddler-time"
-                }
+                "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
                 "url": "images/bible-highlight.jpg",
                 "content": "<h1>Join Us for Bible Study!</h1><p>Sunday at 6:00 PM (Coed Study)</p><p>Tuesdays at 1:00 and 7:00 PM (Ladies Study)</p><p>Wednesdays at 6:30 PM (Men's Study)</p><p>Wednesday at 6:30 PM (Coed Study)</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/bible-study"
-                }
+                "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
                 "url": "images/anvil.jpg",
                 "content": "<h1>F.O.R.G.E</h1><p>A Christ-Centered 12-step recovery group</p><p>Fridays from 6:30 to 8:00 PM</p>",
-                "color": "rgba(22,69,89,0.4)",
-                "button": {
-                    "label": "Learn More",
-                    "url": "/forge"
-                }
+                "color": "rgba(22,69,89,0.4)"
             }
         ]
     },
@@ -89,9 +65,9 @@
     },
     {
         "type": "image",
-        "url": "images/cross-on-water.jpg",
-        "content": "<h1>Who We Are</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>",
-        "color": "rgba(22,69,89,0.4)"
+        "url": "images/worship.jpg",
+        "content": "<h1>Who We Are</h1><p>At Southern Calvert Baptist Church, we believe the Bible is the inerrant word of God. The Bible teaches that God connects with people by offering them forgiveness of sin and reconciliation through Jesus’ sacrificial death, burial and resurrection. Jesus said that the greatest commandment is that we love one another as Christ has loved us. That is how we as God’s people connect with one another. Together, Southern Calvert Baptist Church strives to live out the greatest commandment to love one another as Christ loves us. We exist so that all may be able to find and follow Jesus wholeheartedly and to provide opportunities to respond to his love through vibrant worship, authentic fellowship, and biblical preaching.</p>",
+        "color": "rgba(22,69,89,0.6)"
     },
     {
         "type": "dual",

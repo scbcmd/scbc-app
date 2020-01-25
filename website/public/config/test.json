@@ -83,7 +83,13 @@
     },
 
     {
-        "type": "calendar",
-        "calendarId": "gaylekokolios69@gmail.com"
+        "type": "card",
+        "content": "<h1>SCBC Church Calendar</h1><h3>Check out our events!</h3>",
+        "models": [
+            {
+                "type": "calendar",
+                "calendarId": "gaylekokolios69@gmail.com"
+            }
+        ]
     }
 ]

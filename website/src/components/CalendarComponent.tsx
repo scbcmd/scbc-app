@@ -35,7 +35,7 @@ export class CalendarComponent extends React.Component<CalendarComponentProps, C
     }
 
     private SetDates(start: Date, end: Date){
-        if(start.toISOString() == this.cachedStart.toISOString() && end.toISOString() == this.cachedEnd.toISOString()) return;
+        if(start.toISOString() === this.cachedStart.toISOString() && end.toISOString() === this.cachedEnd.toISOString()) return;
         this.cachedStart = start;
         this.cachedEnd = end;
 
@@ -62,7 +62,15 @@ export class CalendarComponent extends React.Component<CalendarComponentProps, C
             },
             editable: false,
             datesRender: (info: any) => {
-                this.SetDates(info.view.activeStart as Date, info.view.activeEnd as Date)
+                this.SetDates(info.view.activeStart as Date, info.view.currentEnd as Date)
+            },
+            eventRender: (info: any) => {
+                if(info.event.allDay) {
+                    info.el.classList.add("fc-all-day");
+                }
+                if(info.event.end.getTime() < new Date().getTime()){
+                    info.el.classList.add("fc-expired");
+                }
             }
         }
 

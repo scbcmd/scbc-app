@@ -18,9 +18,20 @@ interface CardComponentState {
 export class CardComponent extends React.Component<CardComponentProps, CardComponentState> {
 
     public render(): ReactElement {
+
+		const elements: ReactElement[] = [];
+		if(this.props.model.models != null) {
+			for(let i = 0; i < this.props.model.models.length; i++){
+				elements.push(<BaseComponent key={i} model={this.props.model.models[i]} />);
+			}
+		}
+
         return <div className={`${this.props.className} card-wrapper`}>
             <Card title={this.props.model.title} >
-                <BaseComponent model={this.props.model.model} />
+                <div className="card-content" >
+                    <div dangerouslySetInnerHTML={{__html: this.props.model.content}}/>
+                </div>
+                {elements}
             </Card>
         </div>
     }

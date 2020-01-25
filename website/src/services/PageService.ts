@@ -38,7 +38,7 @@ export default class PageService {
 
     private getPath(): string {
 		let path: string = window.location.pathname.substr(1);
-		if(path == "") {
+		if(path === "") {
 			path = "home";
         }
 		return path;
@@ -48,7 +48,7 @@ export default class PageService {
         const path = this.getPath();
 
         return new Promise<BaseModel[]>((resolve, reject) => {
-            if(this.pages[path] != null) resolve(this.pages[path]);
+            if(this.pages[path] !== undefined && this.pages[path] !== null ) resolve(this.pages[path]);
             else {
                 ConfigService.getInstance().getPage(path)
                 .then((result) => {
