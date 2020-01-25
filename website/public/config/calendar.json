@@ -1,0 +1,12 @@
+[
+    {
+        "type": "card",
+        "content": "<h1>SCBC Church Calendar</h1><h3>For more information or to update this calendar please contact <a href=\"mailto: scbc1secretary@gmail.com\">scbc1secretary@gmail.com</a></h3>",
+        "models": [
+            {
+                "type": "calendar",
+                "calendarId": "gaylekokolios69@gmail.com"
+            }
+        ]
+    }
+]

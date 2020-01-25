@@ -4,54 +4,11 @@
         "link": "/home"
     },
     {
-        "label": "About Us",
-        "items": [
-            {
-                "label": "Our Pastors",
-                "link": "/pastors"
-            },
-            {
-                "label": "Our Beliefs",
-                "link": "/our-beliefs"
-            }
-        ]
+        "label": "Calendar",
+        "link": "/calendar"
     },
     {
-        "label": "Adult Ministry",
-        "items": [
-            {
-                "label": "Men's Bible Study",
-                "link": "/mens-bible-study"
-            },
-            {
-                "label": "Wednesday Night Bible Study",
-                "link": "/wednesday-night-bible-study"
-            },
-            {
-                "label": "Women's Bible Study",
-                "link": "/womens-bible-study"
-            }
-        ]
-    },
-    {
-        "label": "Children's Ministry",
-        "items": [
-            {
-                "label": "Awana",
-                "link": "/awana"
-            },
-            {
-                "label": "King's Kids",
-                "link": "/kings-kids"
-            },
-            {
-                "label": "Toddler Time",
-                "link": "/toddler-time"
-            },
-            {
-                "label": "Youth Impact",
-                "link": "/youth-impact"
-            }
-        ]
+        "label": "Online Giving",
+        "link": "https://app.easytithe.com/app/giving/scbconnect"
     }
 ]

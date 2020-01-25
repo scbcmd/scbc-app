@@ -74,7 +74,7 @@ export class SlideshowComponent extends React.Component<SlideshowComponentProps,
     }
 
     private getNextIndex(): number {
-        if(this.state.index == this.props.model.slides.length - 1) return 0;
+        if(this.state.index === this.props.model.slides.length - 1) return 0;
         return this.state.index + 1;
     }
 
