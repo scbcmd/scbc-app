@@ -5,6 +5,9 @@ body .fc-day-top .fc-day-number {
     padding:0px;
 }
 
+body .fc-unthemed td.fc-today {
+    background-color: var(--bright-secondary-color);
+}
 
 body .fc .fc-toolbar .fc-button {
     background-color:var(--primary-color);
@@ -13,7 +16,7 @@ body .fc .fc-toolbar .fc-button {
 }
 
 body .fc .fc-toolbar .fc-button:disabled {
-    background-color:lightgrey !important;
+    background-color:gray !important;
     border-color:rgba(0,0,0,0.3);
     opacity:1;
 }
