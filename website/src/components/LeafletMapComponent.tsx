@@ -39,12 +39,16 @@ export class LeafletMapComponent extends React.Component<LeafletMapComponentProp
                 zoomControl={false}
                 minZoom={this.props.model.zoom}
                 maxZoom={this.props.model.zoom}
-                scrollWheelZoom={false}>
+                scrollWheelZoom={false}
+                closePopupOnClick={false}
+                doubleClickZoom={false}
+                touchZoom={false}
+                tap={false}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"/>
                     
                 <Marker position={this.props.model.location} icon={this.markerSymbol} ref={(e) => {e?.leafletElement.openPopup()}}>
-                    <Popup>
+                    <Popup closeOnClick={false} closeButton={false} closeOnEscapeKey={false}>
                         <div dangerouslySetInnerHTML={{__html: this.props.model.content}}></div>
                         <a href={this.props.model.url}>Open In Google Maps</a>
                     </Popup>

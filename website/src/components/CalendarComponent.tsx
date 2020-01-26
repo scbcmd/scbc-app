@@ -55,11 +55,6 @@ export class CalendarComponent extends React.Component<CalendarComponentProps, C
         const options = {
             plugins: [dayGridPlugin, timeGridPlugin],
             defaultView: 'dayGridMonth',
-            header: {
-                left: 'prev,next',
-                center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            },
             editable: false,
             datesRender: (info: any) => {
                 this.SetDates(info.view.activeStart as Date, info.view.currentEnd as Date)

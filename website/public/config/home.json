@@ -16,7 +16,7 @@
             },
             {
                 "type": "image",
-                "url": "images/outside-group.jpg",
+                "url": "images/winter-meltdown.jpg",
                 "content": "<h1>Youth Impact</h1><p>Sunday Nights at 5:30 PM</p><p>All grades 6-12 welcome!</p>",
                 "color": "rgba(22,69,89,0.4)"
             },
@@ -40,7 +40,7 @@
             },
             {
                 "type": "image",
-                "url": "images/anvil.jpg",
+                "url": "images/fire.jpg",
                 "content": "<h1>F.O.R.G.E</h1><p>A Christ-Centered 12-step recovery group</p><p>Fridays from 6:30 to 8:00 PM</p>",
                 "color": "rgba(22,69,89,0.4)"
             }
@@ -66,7 +66,7 @@
     {
         "type": "image",
         "url": "images/worship.jpg",
-        "content": "<h1>Who We Are</h1><p>At Southern Calvert Baptist Church, we believe the Bible is the inerrant word of God. The Bible teaches that God connects with people by offering them forgiveness of sin and reconciliation through Jesus’ sacrificial death, burial and resurrection. Jesus said that the greatest commandment is that we love one another as Christ has loved us. That is how we as God’s people connect with one another. Together, Southern Calvert Baptist Church strives to live out the greatest commandment to love one another as Christ loves us. We exist so that all may be able to find and follow Jesus wholeheartedly and to provide opportunities to respond to his love through vibrant worship, authentic fellowship, and biblical preaching.</p>",
+        "content": "<h1>Who We Are</h1><p>At Southern Calvert Baptist Church, we believe the Bible is the inerrant word of God. The Bible teaches that God connects with people by offering them forgiveness of sin and reconciliation through Jesus’ sacrificial death, burial and resurrection. Jesus said that the greatest commandment is that we love one another as Christ has loved us. That is how we as God’s people connect with one another.</p>",
         "color": "rgba(22,69,89,0.6)"
     },
     {

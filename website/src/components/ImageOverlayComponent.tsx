@@ -43,8 +43,10 @@ export class ImageOverlayComponent extends React.Component<ImageOverlayComponent
                 <div className="image" style={{backgroundImage: `url("${this.props.model.url}")`}}></div>
                 <div className="filter" style={{backgroundColor: this.props.model.color}}></div>
                 <div className="content" >
-                    <div dangerouslySetInnerHTML={{__html: this.props.model.content}}/>
-                    {buttonElement}
+                    <div style={{maxWidth:"500px", margin:"auto"}}>
+                        <div dangerouslySetInnerHTML={{__html: this.props.model.content}}/>
+                        {buttonElement}
+                    </div>
                 </div>
             </div>
         </div>

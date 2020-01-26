@@ -2,6 +2,7 @@
   --primary-color: rgb(22,69,89);
   --primary-color-highlight: rgb(34,108,140);
   --secondary-color: rgb(222,120,38);
+  --bright-secondary-color: hsl(27, 50%, 93%);
   --background-color: rgb(255,255,255);
   --darkened-background-color: rgb(217,217,217);
 }
@@ -31,4 +32,13 @@ body .p-button {
 body .p-button:enabled:hover {
   background:none;
   background-color: var(--primary-color-highlight);
+}
+
+body a {
+  color: var(--secondary-color);
+}
+
+body a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
