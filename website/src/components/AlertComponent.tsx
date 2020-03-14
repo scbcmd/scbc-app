@@ -56,7 +56,7 @@ export class AlertComponent extends React.Component<AlertComponentProps, AlertCo
                 if(model.dismissed || currentDate > alertDate) continue;
                 elements.push(<div className="alert" key={i}>
                     <div className="alert-title">{model.title}</div>
-                    <div className="alert-description">{model.description}</div>
+                    <div className="alert-description" dangerouslySetInnerHTML={{__html: model.content}}></div>
                     <button className="alert-close-button" onClick={() => {this.dismissAlert(i)}}>
                         <i className="fa fa-times"></i>
                     </button>
