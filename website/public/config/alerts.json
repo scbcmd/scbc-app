@@ -1,12 +1,7 @@
 [
     {
-        "title": "Sunday Evening Events Cancelled",
-        "description": "Sunday evening events for 01/05/2019 are cancelled due to inclement weather",
-        "expirationDate": "2020-01-05T20:00:00.000Z"
-    },
-    {
-        "title": "Another Title",
-        "description": "This is another long desciprtion",
-        "expirationDate": "2020-01-04T20:10:00.000Z"
+        "title": "Notice!",
+        "content": "Connect groups, childcare, awana, and Sunday evening events are cancelled for this Sunday March 16th. Sunday morning worship will proceed as normal (except for childcare) at 10:45 AM. We encourage you to worship with us remotely through our <a href=\"https://www.youtube.com/channel/UCyPFVqf4HpRoYVLODaJQK5A\">Live Stream</a>",
+        "expirationDate": "2020-03-15T20:00:00.000Z"
     }
 ]
