@@ -5,43 +5,19 @@
             {
                 "type": "image",
                 "url": "images/hands-up.jpg",
-                "content": "<h1>Come Worship with Us!</h1><p>Connect Groups at 9:30 AM</p><p>Worship Service at 10:45 AM</p><p>Sunday Evenings at 6:00 PM</p>",
+                "content": "<h1>Come Worship with Us!</h1><p><a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Connect Groups at 9:00 AM</p><p><a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Worship Service at 10:30 AM</p><p><a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Bible Study Wednesday evening at 7:00 PM</p>",
                 "color": "rgba(22,69,89,0.4)"
             },
             {
                 "type": "image",
-                "url": "images/awana.jpg",
-                "content": "<h1>Awana Clubs</h1><p>Wednesdays at 6:00 PM</p>",
-                "color": "rgba(22,69,89,0.4)"
-            },
-            {
-                "type": "image",
-                "url": "images/winter-meltdown.jpg",
-                "content": "<h1>Youth Impact</h1><p>Sunday Nights at 5:30 PM</p><p>All grades 6-12 welcome!</p>",
-                "color": "rgba(22,69,89,0.4)"
-            },
-            {
-                "type": "image",
-                "url": "images/sheet-music.jpg",
-                "content": "<h1>King's Kids Children's Choir</h1><p>Sundays at 6:00 PM during the school year</p><p>Ages K - 5th Grade</p>",
-                "color": "rgba(22,69,89,0.4)"
-            },
-            {
-                "type": "image",
-                "url": "images/toddler.jpg",
-                "content": "<h1>Toddler Time</h1><p>A play group for moms and toddlers</p><p>Mondays from 9:30-11:00 AM</p>",
-                "color": "rgba(22,69,89,0.4)"
+                "url": "images/cross-on-water.jpg",
+                "content": "<h1>Attend Our Connect Groups!</h1><p>Hosted on <a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Sunday at 9:00 AM</p>",
+                "color": "rgba(22,69,89,0.5)"
             },
             {
                 "type": "image",
                 "url": "images/bible-highlight.jpg",
-                "content": "<h1>Join Us for Bible Study!</h1><p>Sunday at 6:00 PM (Coed Study)</p><p>Tuesdays at 1:00 and 7:00 PM (Ladies Study)</p><p>Wednesdays at 6:30 PM (Men's Study)</p><p>Wednesday at 6:30 PM (Coed Study)</p>",
-                "color": "rgba(22,69,89,0.4)"
-            },
-            {
-                "type": "image",
-                "url": "images/fire.jpg",
-                "content": "<h1>F.O.R.G.E</h1><p>A Christ-Centered 12-step recovery group</p><p>Fridays from 6:30 to 8:00 PM</p>",
+                "content": "<h1>Join Us for Bible Study!</h1><p>Hosted on <a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Wednesday evening at 7:00 PM</p>",
                 "color": "rgba(22,69,89,0.4)"
             }
         ]
@@ -60,7 +36,7 @@
         },
         "right": {
             "type": "brand",
-            "content": "<h1>Connecting People With Christ, and Connecting Christ's People with One Another</h1><h2>Connect Groups: Sunday at 9:30 AM</h2><h2>Worship Service: Sunday at 10:45 AM</h2><h2>Sunday Evenings: Sunday at 6:00 PM</h2>"
+            "content": "<h1>Connecting People With Christ, and Connecting Christ's People with One Another</h1><h2><a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Connect Groups: Sunday at 9:00 AM</h2><h2><a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Worship Service: Sunday at 10:30 AM</h2>"
         }
     },
     {
@@ -80,7 +56,7 @@
         "right": {
             "type": "image",
             "url": "images/study-desk.jpg",
-            "content": "<h1>Join us for Bible Study</h1><p>Coed Study Sunday at 6:00 PM</p><p>Women's Study Tuesday at 1:00 and 7:00 PM</p><p>Men's Study Wednesday at 6:00 PM</p><p>Coed Study Wednesday at 6:00 PM</p>",
+            "content": "<h1>Join us for Bible Study</h1><p>Hosted on <a href=\"https://www.facebook.com/scbcmd\">Facebook Live</a> Wednesday evening at 7:00 PM</p>",
             "color": "rgba(22,69,89,0.4)"
         }
     }
